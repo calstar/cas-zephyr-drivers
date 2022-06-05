@@ -1,0 +1,12 @@
+menuconfig SAM_M8Q
+	bool "GNSS sensor module"
+	default y
+	depends on I2C
+
+if SAM_M8Q
+
+module = SAM_M8Q
+module-str = sam_m8q
+source "subsys/logging/Kconfig.template.log_config"
+
+endif
