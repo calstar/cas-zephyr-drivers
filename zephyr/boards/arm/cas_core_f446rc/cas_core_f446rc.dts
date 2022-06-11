@@ -108,13 +108,13 @@ cas_onboard_spi: &spi3 {};
 };
 
 &spi2 {
-	pinctrl-0 = <&spi3_nss_pa4 &spi3_sck_pc10 &spi3_miso_pc11 &spi3_mosi_pc12>;
+	pinctrl-0 = <&spi2_nss_pb9 &spi2_sck_pb10 &spi2_miso_pc2 &spi2_mosi_pc3>;
 	pinctrl-names = "default";
 	status = "okay";
 };
 
 &spi3 {
-	pinctrl-0 = <&spi2_nss_pb9 &spi2_sck_pb10 &spi2_miso_pc2 &spi2_mosi_pc3>;
+	pinctrl-0 = <&spi3_nss_pa4 &spi3_sck_pc10 &spi3_miso_pc11 &spi3_mosi_pc12>;
 	pinctrl-names = "default";
 	status = "okay";
 };
